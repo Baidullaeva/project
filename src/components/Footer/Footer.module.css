@@ -1,0 +1,39 @@
+.footer {
+    background-color: #14171A;
+}
+
+.footer__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 41px 0;
+}
+
+.footer__links {
+    display: flex;
+    column-gap: 15px;
+}
+
+.footer__link {
+    transition: all 0.3s;
+}
+
+.footer__link:hover {
+    transform: scale(1.15);
+}
+
+@media (max-width: 400px) {
+    .footer__body {
+        flex-direction: column;
+    }
+
+    .footer__logo {
+        padding-bottom: 40px;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}

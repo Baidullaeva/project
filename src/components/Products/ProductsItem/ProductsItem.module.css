@@ -1,0 +1,353 @@
+@charset "UTF-8";
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 10px 15px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 730px) {
+    .container {
+        align-items: center;
+    }
+}
+
+.container .info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media (max-width: 730px) {
+    .container .info {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.container .info .imageContainer {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-right: 100px;
+}
+
+@media (max-width: 730px) {
+    .container .info .imageContainer {
+        margin-right: 0;
+        width: 80%;
+    }
+}
+
+@media (max-width: 380px) {
+    .container .info .imageContainer {
+        width: 100%;
+    }
+}
+
+.container .info .imageContainer .itemProduct__img {
+    width: 100%;
+}
+
+.container .info .imageContainer .name {
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.container .info .imageContainer .price {
+    padding-top: 10px;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.container .info .imageContainer .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media (max-width: 730px) {
+    .container .info .imageContainer .buttons {
+        padding-bottom: 20px;
+    }
+}
+
+.container .info .imageContainer .buttons .button {
+    display: inline-block;
+    padding: 0.58rem 1rem;
+    border-radius: 7rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.container .info .imageContainer .buttons .button:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffb300;
+    border-radius: 10rem;
+    z-index: -2;
+}
+
+.container .info .imageContainer .buttons .button:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #b37d00;
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+}
+
+.container .info .imageContainer .buttons .button:hover {
+    color: #fff;
+}
+
+.container .info .imageContainer .buttons .button:hover:before {
+    width: 100%;
+}
+
+.container .info .imageContainer .buttons .buttonCart::before {
+    left: 0;
+    transition: all 0.6s;
+}
+
+.container .info .otherContainer {
+    max-width: 500px;
+}
+
+@media (max-width: 730px) {
+    .container .info .otherContainer {
+        width: 80%;
+    }
+}
+
+@media (max-width: 380px) {
+    .container .info .otherContainer {
+        width: 100%;
+    }
+}
+
+.container .info .otherContainer_1 {
+    padding-top: 20px;
+}
+
+.container .info .otherContainer_1 .item {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.container .info .otherContainer .description {
+    font-size: 20px;
+    padding-top: 40px;
+}
+
+@media (max-width: 900px) {
+    .container .info .otherContainer .description {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 730px) {
+    .container .info .otherContainer .description {
+        padding-top: 10px;
+    }
+}
+
+.container .info .otherContainer .description span {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+@media (max-width: 930px) {
+    .container .info .otherContainer .description span {
+        display: block;
+        padding-bottom: 10px;
+    }
+}
+
+.ratingResult {
+    width: 120px;
+    margin: 0 auto;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.ratingResult span {
+    padding: 0;
+    font-size: 20px;
+    margin: 0 3px;
+    line-height: 1;
+    color: lightgrey;
+    text-shadow: 1px 1px #bbb;
+}
+
+.ratingResult>span:before {
+    content: "★";
+}
+
+.ratingResult>span.active {
+    color: gold;
+    text-shadow: 1px 1px #c60;
+}
+
+.loader {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.comments {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+@media (max-width: 730px) {
+    .comments {
+        width: 80%;
+    }
+}
+
+@media (max-width: 380px) {
+    .comments {
+        width: 100%;
+    }
+}
+
+.comments__blockInput {
+    display: flex;
+    align-items: flex-start;
+}
+
+@media (max-width: 730px) {
+    .comments__blockInput {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.comments__title {
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.comments__input {
+    width: 400px;
+    margin-right: 20px;
+}
+
+.comments__addButton {
+    display: inline-block;
+    padding: 0.58rem 1rem;
+    border-radius: 7rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+@media (max-width: 600px) {
+    .comments__addButton {
+        margin-bottom: 10px;
+    }
+}
+
+.comments__addButton:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffb300;
+    border-radius: 10rem;
+    z-index: -2;
+}
+
+.comments__addButton:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: #b37d00;
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+}
+
+.comments__addButton:hover {
+    color: #fff;
+}
+
+.comments__addButton:hover:before {
+    height: 100%;
+}
+
+.comments__cont {
+    width: 100%;
+}
+
+.comments__item {
+    padding: 15px 0;
+    max-width: 500px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.comments__item::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 1px;
+    background-color: #bbb;
+}
+
+.comments__item__button {
+    padding: 5px;
+    border: 1px #000 solid;
+    border-radius: 4px;
+    transition: all 0.3s ease 0s;
+}
+
+.comments__item__button:hover {
+    transform: scale(1.1);
+}
+
+.comments__item__aftor {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.comments__item__comment {
+    word-wrap: break-word;
+    max-width: 400px;
+}

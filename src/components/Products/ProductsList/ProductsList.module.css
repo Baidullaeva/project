@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.products__items {
+    display: grid;
+    gap: 32px;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, 280px);
+    justify-content: center;
+    align-content: center;
+}
+
+@media (max-width: 630px) {
+    .products__items {
+        grid-template-columns: repeat(2, minmax(140px, 315px));
+    }
+}
+
+@media (max-width: 480px) {
+    .products__items {
+        gap: 16px;
+    }
+}

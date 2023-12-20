@@ -1,0 +1,114 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #dcdcdc;
+    flex: 1 1 auto;
+}
+
+.container {
+    max-width: 1030px;
+    margin: 0 auto;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .row1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.row1 .uploadBlock {
+    display: flex;
+    width: fit-content;
+}
+
+.row1 .uploadBlock .loadingAvatar {
+    display: inline-block;
+}
+
+.row1 .uploadBlock .upload {
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.row2 {
+    padding-top: 30px;
+    padding-right: 100px;
+}
+
+@media (max-width: 767px) {
+    .row2 {
+        padding-right: 0;
+    }
+}
+
+.row2 .blockInput {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.row2 .blockInput .blockButton {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 50px;
+    padding-top: 5px;
+}
+
+.row2 .item {
+    font-size: 23px;
+    padding-bottom: 20px;
+}
+
+.row2 .description {
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.row2 .description span {
+    font-size: 16px;
+}
+
+.row2 .update {
+    background-color: #ffecec;
+    margin-bottom: 50px;
+}
+
+.row2 .leave {
+    display: block;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid #86ff82;
+    transition: all 0.3s ease 0s;
+}
+
+.row2 .leave:hover {
+    transform: scale(1.05);
+}
+
+.row2 .admin {
+    font-size: 23px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.row2 .linkAdmin {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.logOut {
+    display: block;
+}
